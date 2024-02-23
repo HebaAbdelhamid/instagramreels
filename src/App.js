@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
++import { useEffect, useState } from 'react';
 import './App.css';
 import Videocard from './videocard';
 import { database } from './firebase.js';
@@ -14,9 +14,10 @@ function App() {
       const data = snapshot.val();
 
       if (snapshot.exists()) {
-        const projectsArray = Object.values(data).map((project) => project);
+       // const projectsArray = Object.values(data).map((project) => project);
+       const projectsArray = Object.values(data);
+
 setProjects(projectsArray);
-//console.log(projects);
       }
     });
   }, [ ]);

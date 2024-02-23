@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><title>todoappnode</title>
+        <script href="todoappnode.js"></script>
+    </head>
+    <body>
+        <h1>Todo App</h1>
+        <form id="addTodoForm">
+            <label for="todoText">New Todo:</label>
+            <input type="text" id="todoText" required>
+            <button type="button" onclick="addTodo()">Add Todo</button>
+          </form>
+          <div id="todoList"></div>
+          <script src="todoappnode.js"></script>
+
+          <!--<script>
+            function updateTodoList() {
+      const todoList = document.getElementById('todoList');
+      todoList.innerHTML = '';
+
+      todos.forEach((todo, index) => {
+        const listItem = document.createElement('div');
+        listItem.textContent = `${index}. [${todo.completed ? 'X' : ' '}] ${todo.text}`;
+        todoList.appendChild(listItem);
+      });
+    }
+    function addTodo() {
+      const todoText = document.getElementById('todoText').value;
+      todos.push({ text: todoText, completed: false });
+      updateTodoList();
+    }
+    updateTodoList();
+          </script>-->
+    </body>
+</html>

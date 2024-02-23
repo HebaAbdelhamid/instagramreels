@@ -23,7 +23,7 @@
     font-weight: 900;
     text-transform: inherit;
 }
-.videofooter_ticker>h4/*.ticker*/{
+.videofooter_ticker>h4{
     height: fit-content;
     margin-left: 30px;
    margin-bottom: 10px;
